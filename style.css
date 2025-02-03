@@ -1,0 +1,130 @@
+
+
+:root {
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Red Hat Display";
+    background: url(/images/pattern-background-desktop.svg) no-repeat top center/cover,
+        var(--Pale-blue);
+}
+
+.mobile-container {
+    max-width: 375px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+.hero-img {
+    height: fit-content;
+}
+.hero-img img {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.content-container {
+    padding: 1rem 1.5rem;
+}
+.content-container h2,
+.content-container p {
+    text-align: center;
+}
+.content-container h2 {
+    font-weight: 900;
+}
+p {
+    font-weight: 500;
+}
+.content-container p {
+    margin: 1.5rem auto;
+}
+.annual-plan {
+    background-color: var(--Very-pale-blue);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 20px;
+}
+.plan-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 1rem;
+}
+.music-icon {
+    height: fit-content;
+}
+.year-plan p {
+    font-weight: 900;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+.change:active,
+.change:hover {
+    text-decoration: none;
+    color: var(--Bright-blue);
+    cursor: pointer;
+}
+.proceed-btn {
+    margin: 1.5rem 0;
+}
+.proceed-btn button {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: var(--Bright-blue);
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    font-weight: 900;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+.proceed-btn button:active {
+    padding: 1.3rem;
+    background-color: var(--Bright-blue);
+}
+.cancel-order p {
+    font-weight: 900;
+    margin-top: 1.3rem;
+    cursor: pointer;
+}
+.text-summary,
+span,
+.cancel-order {
+    color: gray;
+}
+h2,
+.year-plan p,
+.cancel-order:hover {
+    color: rgb(56, 50, 50);
+}
+
+@media (max-width: 375px) {
+    body {
+        background: url(/images/pattern-background-mobile.svg) no-repeat center center/cover, 
+        var(--Pale-blue);
+    }
+}

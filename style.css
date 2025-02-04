@@ -6,12 +6,14 @@
     --Dark-blue: hsl(223, 47%, 23%);
     --Pale-blue: hsl(225, 100%, 94%);
     --Bright-blue: hsl(245, 75%, 52%);
+    --Bright-blue-hover: hsl(245, 75%, 60%);
 }
 
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -20,7 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "Red Hat Display";
-    background: url(/images/pattern-background-desktop.svg) no-repeat top center/cover,
+    background: url(images/pattern-background-desktop.svg) no-repeat top center/cover,
         var(--Pale-blue);
 }
 
@@ -89,6 +91,7 @@ p {
 }
 .proceed-btn {
     margin: 1.5rem 0;
+    height: 64px;
 }
 .proceed-btn button {
     width: 100%;
@@ -104,7 +107,7 @@ p {
 }
 .proceed-btn button:active {
     padding: 1.3rem;
-    background-color: var(--Bright-blue);
+    background-color: var(--Bright-blue-hover);
 }
 .cancel-order p {
     font-weight: 900;
